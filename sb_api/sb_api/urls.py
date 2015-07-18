@@ -28,7 +28,7 @@ router.register(r'backscratchers', BackScratcherViewSet)
 
 urlpatterns = [
     url(r'^$', Index),
-    url(r'^api', include(router.urls)),
+    url(r'^api/', include(router.urls)),
 	url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api-token-auth/', views.obtain_auth_token),
     url(r'^list/$', BackScratcherList.as_view(), name='list'),
