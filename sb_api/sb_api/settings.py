@@ -26,7 +26,7 @@ SECRET_KEY = '3ky#si9ill*ta3qekf+r3qvhox&l9ly7cqv@y!1js1%hz=z+8z'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+DEFAULT_PORT = '8080'
 
 # Application definition
 
@@ -50,7 +50,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
+   # 'django.middleware.security.SecurityMiddleware',
 )
 
 ROOT_URLCONF = 'sb_api.urls'
@@ -107,7 +107,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/opt/static/sb_api/'
 
 # rest
 REST_FRAMEWORK = {
@@ -124,3 +124,4 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     )    
 }
+
