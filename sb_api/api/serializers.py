@@ -6,4 +6,4 @@ from .models import BackScratcher
 class BackScratcherSerializer(serializers.ModelSerializer):
     class Meta:
         model = BackScratcher
-        fields = ('name', 'description', 'size', 'price')
+        fields = ('id', 'name', 'description', 'size', 'price')
