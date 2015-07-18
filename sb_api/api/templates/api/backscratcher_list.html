@@ -1,0 +1,12 @@
+
+<h2>Back Scratchers</h2>
+<ul>
+    {% for scratcher in object_list %}
+        <li>
+            {{ scratcher.name }},
+            {{ scratcher.description }},
+            {{ scratcher.size }},
+            {{ scratcher.price }}
+        </li>
+    {% endfor %}
+</ul>

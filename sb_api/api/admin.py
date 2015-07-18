@@ -1,6 +1,9 @@
 from django.contrib import admin
 from .models import BackScratcher
 
-admin.site.register(BackScratcher)
+class BackScratcherAdmin(admin.ModelAdmin):
+    list_display = ('name', 'description')
+
+admin.site.register(BackScratcher, BackScratcherAdmin)
 
 
