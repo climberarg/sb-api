@@ -1,0 +1,179 @@
+{
+	"id": "7e166930-7550-6550-88a6-3733cf82c50b",
+	"name": "ScratcherBling_rest-api",
+	"description": "",
+	"order": [
+		"077986f5-fd54-f738-cfc1-4ef10ab673ec",
+		"c7f8d6d0-6463-6fa3-a5a8-3ce63c672f03",
+		"4f9e7e99-51a5-55ba-c862-fdb19f2e3f8f",
+		"520e3336-dbc7-e798-4fc6-aacbfb2c23e4",
+		"931650d2-4eb3-d926-c7fa-8529a4a22e3e"
+	],
+	"folders": [],
+	"timestamp": 1437227172289,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "077986f5-fd54-f738-cfc1-4ef10ab673ec",
+			"headers": "//Authorization: Token b459f80753c1d796f475d9904a3c7f597175fb45\n",
+			"url": "http://192.241.165.96:8090/api-token-auth/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "7e166930-7550-6550-88a6-3733cf82c50b",
+			"data": [
+				{
+					"key": "username",
+					"value": "jeff",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "secret",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Get Token",
+			"description": "Get a token for authenticated rest calls.",
+			"descriptionFormat": "html",
+			"time": 1437230117046,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4f9e7e99-51a5-55ba-c862-fdb19f2e3f8f",
+			"headers": "Authorization: Token f4d93461dc7ee4c6e8ee9bd551a6bbdfdc418456\n",
+			"url": "http://192.241.165.96:8090/api/backscratchers/3",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437228947988,
+			"name": "Get (Read)  BackScratcher",
+			"description": "",
+			"collectionId": "7e166930-7550-6550-88a6-3733cf82c50b",
+			"responses": []
+		},
+		{
+			"id": "520e3336-dbc7-e798-4fc6-aacbfb2c23e4",
+			"headers": "Authorization: Token f4d93461dc7ee4c6e8ee9bd551a6bbdfdc418456\n",
+			"url": "http://192.241.165.96:8090/api/backscratchers/3",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "7e166930-7550-6550-88a6-3733cf82c50b",
+			"data": [
+				{
+					"key": "name",
+					"value": "Glitz and Gold and Silver",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Gold handle and fancy emeralds make this shine",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "XL,L,M,S",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "4343.00",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Put (Update)  BackScratcher",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1437228832809,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "931650d2-4eb3-d926-c7fa-8529a4a22e3e",
+			"headers": "Authorization: Token f4d93461dc7ee4c6e8ee9bd551a6bbdfdc418456\n",
+			"url": "http://192.241.165.96:8090/api/backscratchers/2",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437228973883,
+			"name": "Delete BackScratcher",
+			"description": "",
+			"collectionId": "7e166930-7550-6550-88a6-3733cf82c50b",
+			"responses": []
+		},
+		{
+			"id": "c7f8d6d0-6463-6fa3-a5a8-3ce63c672f03",
+			"headers": "Authorization: Token f4d93461dc7ee4c6e8ee9bd551a6bbdfdc418456\n",
+			"url": "http://192.241.165.96:8090/api/backscratchers/",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "The Itcher",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Scratch any itch",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "XL",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "27.00",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1437228616819,
+			"name": "Post (Create) BackScratcher",
+			"description": "",
+			"collectionId": "7e166930-7550-6550-88a6-3733cf82c50b",
+			"responses": []
+		}
+	]
+}
